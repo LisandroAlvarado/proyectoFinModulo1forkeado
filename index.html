@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,247 +10,252 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="./assets/css/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 
 <body>
   <div class="container">
-  <!-- Header con navegación -->
-  <header class="header">
-    <div class="header__container">
-      <div class="header__brand">
-        <h1 class="header__name">Wilson Perez</h1>
-        <p class="header__tagline">Desarrollador Web Fullstack en Formación</p>
-      </div>       
-       <!--Navegador-->     
-      <nav class="nav navbar navbar-expand-lg bg-primary rounded-2"> 
-        <div class="container">
-          <!--Boton Responsive para navegador-->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Mostrar / ocultar Menu"><span class="navbar-toggler-icon"></span>
-          </button> 
-          
-          <div class="collapse navbar-collapse" id="menu"> 
-            <ul class="nav__list navbar-nav " >           
-              
-              <li class="nav__item nav-item">
-                <a href="./index.html" class="nav__link nav__link--active nav-link">Inicio</a>
+    <!-- Header con navegación -->
+    <header class="header">
+      <div class="header__container">
+        <div class="header__brand">
+          <h1 class="header__name">Wilson Perez</h1>
+          <p class="header__tagline text-danger">Desarrollador Web Fullstack en Formación</p>
+        </div>
+        <!--Navegador-->
+        <nav class="nav navbar navbar-expand-lg bg-primary rounded-2">
+          <div class="container">
+            <!--Boton Responsive para navegador-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+              aria-controls="menu" aria-expanded="false" aria-label="Mostrar / ocultar Menu"><span
+                class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="nav__list navbar-nav ">
+
+                <li class="nav__item nav-item">
+                  <a href="./index.html" class="nav__link nav__link--active nav-link">Inicio</a>
+                </li>
+                <li class="nav__item nav-item">
+                  <a href="#sobre-mi" class="nav__link nav-link">Sobre mí</a>
+                </li>
+                <li class="nav__item nav-item">
+                  <a href="./portafolio.html" class="nav__link nav-link" target="_blank">Proyectos</a>
+                </li>
+                <li class="nav__item nav-item">
+                  <a href="#habilidades" class="nav__link nav-link">Habilidades</a>
+                </li>
+                <li class="nav__item nav-item">
+                  <a href="#contacto" class="nav__link nav-link">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main">
+      <!-- Hero Section -->
+
+      <section class="hero" id="inicio">
+        <div class="hero__container">
+          <h2 class="hero__title">¡Hola Mundo! Mi nombre es Wilson Perez</h2>
+          <p class="hero__subtitle">Soy Desarrollador Web Fullstack en Formación</p>
+          <div class="d-md-flex justyfy-content-between">
+
+            <p class="hero__description ">Estoy aprendiendo HTML y CSS en el Bootcamp de Desafio Latam para crear sitios
+              web agradables a la vista y funcionales. <br> Mi proposito: transformar ideas en experiencias web
+              de utilidad para el usuario como para el propietario.
+            </p>
+            <img src="/assets/img/wilsonDeveloper.jpg" alt="foto perfil" class="hero_photo">
+          </div>
+
+
+          <div class="hero__actions">
+            <a href="./portafolio.html" class="button button--primary" target="_blank">Ver Mis Proyectos</a>
+            <a href="#contacto" class="button button--secondary">Contáctame</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__number">1+</span>
+              <span class="stat__label">Meses aprendiendo</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">5+</span>
+              <span class="stat__label">Proyectos completados</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">3+</span>
+              <span class="stat__label">Tecnologías</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Sobre Mí -->
+      <section class="about" id="sobre-mi">
+        <div class="about__container">
+          <h2 class="about__title">Mi Viaje en el Desarrollo Web</h2>
+
+          <p class="about__intro">
+            Soy <strong>desarrollador web en formación</strong>, actualmente
+            estoy aprendiendo HTML y CSS para crear sitios web bonitos y funcionales.
+          </p>
+
+          <p class="about__text">
+            Me encanta la tecnología y el diseño. Cada día me esfuerzo por continuar aprendiendo, para mejorar mis
+            habilidades y crear mejores productos web.</p>
+
+          <blockquote class="quote">
+            <p class="quote__text">
+              "Aprender cada día algo nuevo que se transforme en sitios web con una agradable experiencia de usuario y a
+              la vez se vea plasmado en la funcionalidad del mismo."
+            </p>
+            <cite class="quote__author">— Mi filosofía de aprendizaje</cite>
+          </blockquote>
+
+          <div class="values">
+            <h3 class="values__title">Mis Valores</h3>
+            <ul class="values__list">
+              <li class="values__item">
+                <span class="values__icon">🎯</span>
+                <strong>Dedicación</strong>
+                <span>Comprometido con mi aprendizaje diario</span>
               </li>
-              <li class="nav__item nav-item">
-                <a href="#sobre-mi" class="nav__link nav-link">Sobre mí</a>
+              <li class="values__item">
+                <span class="values__icon">📚</span>
+                <strong>Curiosidad</strong>
+                <span>Siempre explorando nuevas tecnologías</span>
               </li>
-              <li class="nav__item nav-item">
-                <a href="./portafolio.html" class="nav__link nav-link" target="_blank">Proyectos</a>
+              <li class="values__item">
+                <span class="values__icon">🤝</span>
+                <strong>Comunidad</strong>
+                <span>Aprendiendo y compartiendo con mis compañeros de Desafio Latam</span>
               </li>
-              <li class="nav__item nav-item">
-                <a href="#habilidades" class="nav__link nav-link">Habilidades</a>
-              </li>
-              <li class="nav__item nav-item">
-                <a href="#contacto" class="nav__link nav-link">Contacto</a>
+              <li class="values__item">
+                <span class="values__icon">💡</span>
+                <strong>Creatividad</strong>
+                <span>Siempre buscando nuevas soluciones web</span>
               </li>
             </ul>
           </div>
-        </div> 
-      </nav> 
-    </div>
-  </header>
-
-  <!-- Contenido principal -->
-  <main class="main">
-    <!-- Hero Section -->
-    
-    <section class="hero" id="inicio" >
-      <div class="hero__container">
-        <h2 class="hero__title">¡Hola Mundo! Mi nombre es Wilson Perez</h2>
-        <p class="hero__subtitle">Soy Desarrollador Web Fullstack en Formación</p>
-        <div class="d-md-flex justyfy-content-between">
-          
-          <p class="hero__description ">Estoy aprendiendo HTML y CSS en el Bootcamp de Desafio Latam  para crear sitios     web  agradables a la vista y funcionales. <br> Mi proposito: transformar ideas en experiencias web
-                    de utilidad para el usuario como para el propietario.
-          </p>
-          <img src="/assets/img/wilsonDeveloper.jpg" alt="foto perfil" class="hero_photo">
         </div>
-        
+      </section>
 
-        <div class="hero__actions">
-          <a href="./portafolio.html" class="button button--primary" target="_blank">Ver Mis Proyectos</a>
-          <a href="#contacto" class="button button--secondary">Contáctame</a>
-        </div>  
-              
-        <div class="hero__stats"> 
-          <div class="stat"> 
-            <span class="stat__number">1+</span>
-            <span class="stat__label">Meses aprendiendo</span>
-          </div> 
-          <div class="stat"> 
-            <span class="stat__number">5+</span>
-            <span class="stat__label">Proyectos completados</span>
-          </div> 
-          <div class="stat"> 
-            <span class="stat__number">3+</span>
-            <span class="stat__label">Tecnologías</span>
-          </div> 
-        </div> 
-      </div> 
-    </section>
-    
-    
-    <!-- Sobre Mí -->
-    <section class="about" id="sobre-mi">
-      <div class="about__container">
-        <h2 class="about__title">Mi Viaje en el Desarrollo Web</h2>
+      <!-- Proyectos -->
 
-        <p class="about__intro">
-          Soy <strong>desarrollador web en formación</strong>, actualmente
-          estoy aprendiendo HTML y CSS para crear sitios web bonitos y funcionales.
+
+      <!-- Habilidades -->
+      <section class="skills" id="habilidades">
+        <div class="skills__container">
+          <h2 class="skills__title">Mis Habilidades</h2>
+
+          <h3 class="skills__subtitle">Tecnologías que estoy aprendiendo</h3>
+
+          <div class="skills__list">
+            <div class="skill">
+              <h4 class="skill__name">HTML5 & Semántica</h4>
+              <div class="skill__bar">
+                <div class="skill__progress skill__progress--html"></div>
+              </div>
+              <span class="skill__percentage">75%</span>
+            </div>
+
+            <div class="skill">
+              <h4 class="skill__name">CSS3 & Diseño</h4>
+              <div class="skill__bar">
+                <div class="skill__progress skill__progress--css"></div>
+              </div>
+              <span class="skill__percentage">60%</span>
+            </div>
+
+            <div class="skill">
+              <h4 class="skill__name">Bootstrap</h4>
+              <div class="skill__bar">
+                <div class="skill__progress skill__progress--js"></div>
+              </div>
+              <span class="skill__percentage">20%</span>
+            </div>
+          </div>
+
+          <div class="learning">
+            <h3 class="learning__title">Actualmente aprendiendo:</h3>
+            <ul class="learning__list">
+              <li class="learning__item">Flexbox y Grid Layout</li>
+              <li class="learning__item">Mas funcionalidades de Bootstrap</li>
+              <li class="learning__item">Diseño Responsive</li>
+              <li class="learning__item">Accesibilidad Web</li>
+              <li class="learning__item">Mejores prácticas</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="contact" id="contacto">
+        <div class="contact__container">
+          <h2 class="contact__title">¿Te gustaría contactarme?</h2>
+          <p class="contact__description">
+            Siempre estoy buscando aprender de otros desarrolladores, compartir
+            experiencias y tal vez colaborar en proyectos interesantes.
+          </p>
+
+          <div class="contact__methods">
+            <div class="contact__method">
+              <h3 class="contact__method-title">📧 Email</h3>
+              <a href="mailto:wilsonopm@hotmail.com" class="contact__link">
+                wilsonopm@hotmail.com
+              </a>
+            </div>
+
+            <div class="contact__method">
+              <h3 class="contact__method-title">💻 GitHub</h3>
+              <a href="https://github.com/wilsonopm64" class="contact__link">
+                /wilsonopm64
+              </a>
+            </div>
+
+            <div class="contact__method">
+              <h3 class="contact__method-title">💼 LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/wilson-perez-25ba2056/" class="contact__link">
+                /in/wilson-perez-25ba2056/
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container">
+        <nav class="footer__nav">
+          <a href="#inicio" class="footer__link">Inicio</a>
+          <a href="#sobre-mi" class="footer__link">Sobre mí</a>
+          <a href="./portafolio.html" class="footer__link" target="_blank">Proyectos</a>
+          <a href="#habilidades" class="footer__link ">Habilidades</a>
+          <a href="#contacto" class="footer__link">Contacto</a>
+        </nav>
+
+        <p class="footer__copyright">
+          © Wilson Perez Morales - Portfolio Personal
         </p>
 
-        <p class="about__text">
-          Me encanta la tecnología y el diseño. Cada día me esfuerzo por continuar aprendiendo, para mejorar mis habilidades y crear mejores productos web.</p>
-
-        <blockquote class="quote">
-          <p class="quote__text">
-            "Aprender cada día algo nuevo que se transforme en sitios web con una agradable experiencia de usuario y a la vez se vea plasmado en la funcionalidad del mismo."
-          </p>
-          <cite class="quote__author">— Mi filosofía de aprendizaje</cite>
-        </blockquote>
-
-        <div class="values">
-          <h3 class="values__title">Mis Valores</h3>
-          <ul class="values__list">
-            <li class="values__item">
-              <span class="values__icon">🎯</span>
-              <strong>Dedicación</strong>
-              <span>Comprometido con mi aprendizaje diario</span>
-            </li>
-            <li class="values__item">
-              <span class="values__icon">📚</span>
-              <strong>Curiosidad</strong>
-              <span>Siempre explorando nuevas tecnologías</span>
-            </li>
-            <li class="values__item">
-              <span class="values__icon">🤝</span>
-              <strong>Comunidad</strong>
-              <span>Aprendiendo y compartiendo con mis compañeros de Desafio Latam</span>
-            </li>
-            <li class="values__item">
-              <span class="values__icon">💡</span>
-              <strong>Creatividad</strong>
-              <span>Siempre buscando nuevas soluciones web</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Proyectos -->
-    
-
-    <!-- Habilidades -->
-    <section class="skills" id="habilidades">
-      <div class="skills__container">
-        <h2 class="skills__title">Mis Habilidades</h2>
-
-        <h3 class="skills__subtitle">Tecnologías que estoy aprendiendo</h3>
-
-        <div class="skills__list">
-          <div class="skill">
-            <h4 class="skill__name">HTML5 & Semántica</h4>
-            <div class="skill__bar">
-              <div class="skill__progress skill__progress--html"></div>
-            </div>
-            <span class="skill__percentage">75%</span>
-          </div>
-
-          <div class="skill">
-            <h4 class="skill__name">CSS3 & Diseño</h4>
-            <div class="skill__bar">
-              <div class="skill__progress skill__progress--css"></div>
-            </div>
-            <span class="skill__percentage">60%</span>
-          </div>
-
-          <div class="skill">
-            <h4 class="skill__name">Bootstrap</h4>
-            <div class="skill__bar">
-              <div class="skill__progress skill__progress--js"></div>
-            </div>
-            <span class="skill__percentage">20%</span>
-          </div>
-        </div>
-
-        <div class="learning">
-          <h3 class="learning__title">Actualmente aprendiendo:</h3>
-          <ul class="learning__list">
-            <li class="learning__item">Flexbox y Grid Layout</li>
-            <li class="learning__item">Mas funcionalidades de Bootstrap</li>
-            <li class="learning__item">Diseño Responsive</li>
-            <li class="learning__item">Accesibilidad Web</li>
-            <li class="learning__item">Mejores prácticas</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="contact" id="contacto">
-      <div class="contact__container">
-        <h2 class="contact__title">¿Te gustaría contactarme?</h2>
-        <p class="contact__description">
-          Siempre estoy buscando aprender de otros desarrolladores, compartir
-          experiencias y tal vez colaborar en proyectos interesantes.
+        <p class="footer__credits">
+          Diseñado y desarrollado con ❤️ mientras aprendo HTML y CSS
         </p>
-
-        <div class="contact__methods">
-          <div class="contact__method">
-            <h3 class="contact__method-title">📧 Email</h3>
-            <a href="mailto:wilsonopm@hotmail.com" class="contact__link">
-              wilsonopm@hotmail.com
-            </a>
-          </div>
-
-          <div class="contact__method">
-            <h3 class="contact__method-title">💻 GitHub</h3>
-            <a href="https://github.com/wilsonopm64" class="contact__link">
-              /wilsonopm64
-            </a>
-          </div>
-
-          <div class="contact__method">
-            <h3 class="contact__method-title">💼 LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/wilson-perez-25ba2056/" class="contact__link">
-             /in/wilson-perez-25ba2056/
-            </a>
-          </div>
-        </div>       
-        
       </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__container">
-      <nav class="footer__nav">
-        <a href="#inicio" class="footer__link">Inicio</a>
-        <a href="#sobre-mi" class="footer__link">Sobre mí</a>
-        <a href="./portafolio.html" class="footer__link" target="_blank">Proyectos</a>
-        <a href="#habilidades" class="footer__link " >Habilidades</a>
-        <a href="#contacto" class="footer__link">Contacto</a>
-      </nav>
-
-      <p class="footer__copyright">
-        © Wilson Perez Morales - Portfolio Personal
-      </p>
-
-      <p class="footer__credits">
-        Diseñado y desarrollado con ❤️ mientras aprendo HTML y CSS
-      </p>
-    </div>
-  </footer>
-  <script src="./assets/js/bootstrap.min.js"></script>
-</div>
+    </footer>
+    <script src="./assets/js/bootstrap.min.js"></script>
+  </div>
 </body>
 
 </html>
